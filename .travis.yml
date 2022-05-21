@@ -7,3 +7,16 @@ before_install:
 
 script:
   - docker run -e CI=true khalil/docker npm run test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "eu-west-3"
+  app: docker-travis
+  env: "dockertravis-env"
+  bucket_name: "elasticbeanstalk-eu-west-3-907076315131Info"
+  bucket_path: "docker-travis"
+  on:
+    branch: master    
+  access_key_id: $AWS Access key ID
+  secret_access_key:
+    secure:  "$AWS Secret access key"
