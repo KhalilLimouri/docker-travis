@@ -19,5 +19,4 @@ deploy:
     branch: master    
   access_key_id:
     secure: AKIA5GMPWE757WV4PO6V
-  secret_access_key:
-      secure: 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
+  secret_access_key: tvXC05qjvZZWumYukioirQPpKL5oFLeff0ZSAZ5l
