@@ -17,6 +17,6 @@ deploy:
   bucket_path: "docker-travis"
   on:
     branch: master    
-  access_key_id: $AWS Access key ID
+  access_key_id: $AWS_KEY_ID
   secret_access_key:
-    secure:  "$AWS Secret access key"
+    secure:  "$AWS_SECRET_KEY"
