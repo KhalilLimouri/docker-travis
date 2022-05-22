@@ -13,8 +13,8 @@ deploy:
   region: "eu-west-3"
   app: docker-travis
   env: "dockertravis-env"
-  bucket_name: "elasticbeanstalk-eu-west-3-907076315131Info"
-  bucket_path: "docker"
+  bucket_name: "elasticbeanstalk-eu-west-3-907076315131"
+  bucket_path: "docker-travis"
   on:
     branch: master    
   access_key_id: $AWS_ACCESS_KEY
